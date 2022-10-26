@@ -1,10 +1,12 @@
 /*funçoes matematicas 
- *o que vamos usar para essa aplicação :
- * sqrt - raiz quadrada;
- * pow - potenciação;
- * abs - valor absoluto;
+ *  O que vamos usar para essa aplicação :
+ *  sqrt - raiz quadrada;
+ *  pow - potenciação;
+ *  abs - valor absoluto;
  * 
- * Para mais informações consultar a : java.lang.Math
+ *  Para mais informações consultar a : java.lang.Math
+ * 
+ *  Link para documentação: https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
  * 
  */
 
