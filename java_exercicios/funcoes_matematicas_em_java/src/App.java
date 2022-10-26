@@ -1,3 +1,13 @@
+/*funçoes matematicas 
+ *o que vamos usar para essa aplicação :
+ * sqrt - raiz quadrada;
+ * pow - potenciação;
+ * abs - valor absoluto;
+ * 
+ * Para mais informações consultar a : java.lang.Math
+ * 
+ */
+
 public class App {
     public static void main(String[] args) throws Exception {
        double x = 3.0;
