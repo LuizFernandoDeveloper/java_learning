@@ -21,9 +21,6 @@
 
 import java.util.Locale;
 import java.util.Scanner;
-
-import javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec;
-
 public class App {
     public static void main(String[] args) throws Exception {
 
@@ -44,7 +41,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
 
         int diaDaSemana = 0 ;
-
+        System.out.println("Digie um numero para ver o dia da semana: ");
         diaDaSemana = sc.nextInt();
 
         switch(diaDaSemana){
@@ -72,8 +69,5 @@ public class App {
             
         }
         
-
-
-
     }
 }
