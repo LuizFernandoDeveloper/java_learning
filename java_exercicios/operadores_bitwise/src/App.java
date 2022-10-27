@@ -51,7 +51,7 @@
  *  | V  |  V |     F     |
  *  |----|----|-----------|
  * 
- *      DEMO
+ *      DEMO:
  *                   ___
  *     (89) 0101 1001   |    &: 0001 1000 (24)
  *                      |--> |: 0111 1101 (125)
@@ -64,57 +64,52 @@
  *     
  *     Os bits dentro do quadrado, vão ser os que passarão pelo operador &. No operador
  *     se umas das entradas for falso ou 0 a saida também sera zero. Então logo o resultado
- *     sera zero.
+ *     sera zero. O resultado da operação é da esquerda para direita.
  *                      ___
- *     (89) 0101 100|1|    |      resultado   
- *                  |-|    |--> &: 0
+ *     (89) 0101 100|1|    |       resultado   
+ *                  |-|    |--> &: ---- ---0
  *     (60) 0011 110|0| ___| 
  * 
  *                      ___
- *     (89) 0101 10|0|1    |      resultado   
- *                 |-|     |--> &: 00
+ *     (89) 0101 10|0|1    |       resultado   
+ *                 |-|     |--> &: ---- --00
  *     (60) 0011 11|0|0 ___|       
  * 
  * *                    ___
- *     (89) 0101 1|0|01    |      resultado   
- *                |-|      |--> &: 000
+ *     (89) 0101 1|0|01    |       resultado   
+ *                |-|      |--> &: ---- -000
  *     (60) 0011 1|1|00 ___|              
  * 
  *                      ___
- *     (89) 0101 |1|001    |      resultado   
- *               |-|       |--> &: 0001 
+ *     (89) 0101 |1|001    |       resultado   
+ *               |-|       |--> &: ---- 1000
  *     (60) 0011 |1|100 ___|   
  * 
  *                     ___
- *     (89) 010|1| 1001    |      resultado   
- *             |-|         |--> &: 0001 1
+ *     (89) 010|1| 1001    |       resultado   
+ *             |-|         |--> &: ---1 1000
  *     (60) 001|1| 1100 ___| 
  * 
  *                      ___
- *     (89) 01|0|1 1001    |      resultado   
- *            |-|          |--> &: 0001 10
+ *     (89) 01|0|1 1001    |       resultado   
+ *            |-|          |--> &: --01 1000
  *     (60) 00|1|1 1100 ___|    
  *                      ___
- *     (89) 0|1|01 1001    |      resultado   
- *           |-|           |--> &: 0001 100
+ *     (89) 0|1|01 1001    |       resultado   
+ *           |-|           |--> &: -001 1000
  *     (60) 0|0|11 1100 ___| 
  * 
  *                      ___
- *     (89) |0|101 1001    |      resultado   
+ *     (89) |0|101 1001    |       resultado   
  *          |-|            |--> &: 0001 1000
  *     (60) |0|011 1100 ___|                                                      
  *                   
  *     Resultado final
  *                   ___
- *     (89) 0101 1001   |      resultado da operação bitwise &
+ *     (89) 0101 1001   |       resultado da operação bitwise &
  *                      |--> &: 0001 1000 (24)
  *     (60) 0011 1100___|        
  */                     
-
-
-
-
-
 
 public class App {
     public static void main(String[] args) throws Exception {
