@@ -35,7 +35,6 @@ public class App {
         System.out.println("local de orinal que ocorre a ultima aparição de bc: -" + localdeBcTwo + "-");
         for (String string : arrayOriginal) {
             System.out.println("Usando o split como separador levando em conssideração os espaços, elementos do array:" + string);
-        }
-        
+        } 
     }
 }
