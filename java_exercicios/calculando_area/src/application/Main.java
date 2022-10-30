@@ -53,11 +53,8 @@ public class Main {
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
 
-        double pOne = ((x.a + x.b + x.c) / 2.0);
-        double areaX = Math.sqrt( pOne * ( pOne - x.a) * (pOne - x.b) * (pOne - x.c));
-
-        double pTwo = ((y.a + y.b + y.c) / 2.0);
-        double areaY = Math.sqrt(pTwo * (pTwo - y.a) * (pTwo - y.b) * (pTwo - y.c));
+        double areaX = x.triangleArea();
+        double areaY = x.triangleArea();
 
         System.out.println("Triangle X area:" + areaX);
         System.out.println("Triangle Y area:" + areaY);
@@ -65,14 +62,13 @@ public class Main {
         if (areaX > areaY){
             System.out.println("Larger area: X");
         }
-        else{
+        else if(areaX < areaY){
             System.out.println("Larger area: Y");
         }
-
+        else{
+            System.out.println("Both triangles have areas of the same size");
+        }
 
         sc.close();
-
-
-
     }
 }
